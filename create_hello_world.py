@@ -1,15 +1,15 @@
 import os
 from datetime import datetime
 
-# Folder to store files
+# Define folder path inside the repo
 folder_path = "generated_files"
-os.makedirs(folder_path, exist_ok=True)
+os.makedirs(folder_path, exist_ok=True)  # Create folder if it doesn't exist
 
-# Get current timestamp
+# Generate file name based on timestamp
 timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 file_path = os.path.join(folder_path, f"{timestamp}.txt")
 
-# Create file and write "Hello World"
+# Write "Hello World" to the file
 with open(file_path, "w") as f:
     f.write("Hello World")
 
