@@ -26,4 +26,4 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add generated_files/
           git commit -m "Add new Hello World file"
-          git push
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
