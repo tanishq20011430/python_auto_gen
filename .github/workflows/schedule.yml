@@ -2,9 +2,8 @@ name: Run Python Script Hourly
 
 on:
   schedule:
-    - cron: "30 18 * * *"  # Runs every hour
-  workflow_dispatch:  # Allows manual execution
-
+    - cron: "30 18 * * *"  # Runs 1 midnight IST 
+  workflow_dispatch: 
 jobs:
   run_script:
     runs-on: ubuntu-latest
