@@ -2,7 +2,7 @@ name: Run Python Script Hourly
 
 on:
   schedule:
-    - cron: "30 18 * * *"  # Runs 1 midnight IST 
+    - cron: "30 18 * * *"  # Runs 12 midnight IST 
   workflow_dispatch: 
 jobs:
   run_script:
